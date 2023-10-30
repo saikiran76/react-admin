@@ -37,7 +37,7 @@ yarn add react-admin
 
 ## Documentation
 
-Read the [Tutorial](https://marmelab.com/react-admin/Tutorial.html) for a 30 minutes introduction. After that, head to the [Documentation](https://marmelab.com/react-admin/documentation.html), or checkout the source code of the examples ([e-commerce](https://github.com/marmelab/react-admin/tree/master/examples/demo), [CRM](https://github.com/marmelab/react-admin/tree/master/examples/crm), [blog](https://github.com/marmelab/react-admin/tree/master/examples/simple), [media player](https://github.com/navidrome/navidrome/tree/master/ui)).
+Read the [Tutorial](https://marmelab.com/react-admin/Tutorial.html) for a 30-minute introduction. After that, head to the [Documentation](https://marmelab.com/react-admin/documentation.html), or checkout the source code of the examples ([e-commerce](https://github.com/marmelab/react-admin/tree/master/examples/demo), [CRM](https://github.com/marmelab/react-admin/tree/master/examples/crm), [blog](https://github.com/marmelab/react-admin/tree/master/examples/simple), [media player](https://github.com/navidrome/navidrome/tree/master/ui)).
 
 ## At a Glance
 
@@ -58,7 +58,7 @@ render(
 );
 ```
 
-The `<Resource>` component is a configuration component that allows you to define sub components for each of the admin view: `list`, `edit`, and `create`. These components use Material UI and custom components from react-admin:
+The `<Resource>` component is a configuration component that allows you to define sub-components for each of the admin views: `list`, `edit`, and `create`. These components use Material UI and custom components from react-admin:
 
 ```jsx
 // in posts.js
@@ -124,7 +124,7 @@ See the [Data Providers documentation](https://marmelab.com/react-admin/DataProv
 
 ## Batteries Included But Removable
 
-React-admin is designed as a library of loosely coupled React components and hooks exposing reusable controller logic. It is very easy to replace any part of react-admin with your own, e.g. using a custom datagrid, GraphQL instead of REST, or Bootstrap instead of Material Design.
+React-admin is designed as a library of loosely coupled React components and hooks exposing reusable controller logic. It is very easy to replace any part of react-admin with your own, e.g. using custom datagrid, GraphQL instead of REST, or Bootstrap instead of Material Design.
 
 ## Examples
 
@@ -169,13 +169,13 @@ And then browse to the URL displayed in your console.
 
 * [next](https://github.com/marmelab/react-admin/commits/next) - commits that will be included in the next _major_ or _minor_ release
 
-Bugfix PRs that don't break BC should be made against **master**. All other PRs (new features, BC breaking bugfixes) should be made against **next**.
+Bugfix PRs that don't break BC should be made against **master**. All other PRs (new features, BC breaking bug fixes) should be made against **next**.
 
 ## Contributing
 
-If you want to give a hand: Thank you! There are many things you can do to help making react-admin better. 
+If you want to give a hand: Thank you! There are many things you can do to help make react-admin better. 
 
-The easiest task is **bug triaging**. Check that new issues on GitHub follow the issue template and give a way to reproduce the issue. If not, comment on the issue to ask precisions. Then, try and reproduce the issue following the description. If you managed to reproduce the issue, add a comment to say it. Otherwise, add a comment to say that something is missing. 
+The easiest task is **bug triaging**. Check that new issues on GitHub follow the issue template and give a way to reproduce the issue. If not, comment on the issue to ask for precisions. Then, try and reproduce the issue following the description. If you managed to reproduce the issue, add a comment to say it. Otherwise, add a comment to say that something is missing. 
 
 The second way to contribute is to **answer support questions on [StackOverflow](https://stackoverflow.com/questions/tagged/react-admin)**. There are many beginner questions there, so even if you're not super experienced with react-admin, there is someone you can help there. 
 
@@ -183,7 +183,7 @@ Pull requests for **bug fixes** are welcome on the [GitHub repository](https://g
 
 If you want to **add a feature**, you can open a Pull request on the `next` branch. We don't accept all features—we try to keep the react-admin code small and manageable. Try and see if your feature can't be built as an additional `npm` package. If you're in doubt, open a "Feature Request" issue to see if the core team would accept your feature before developing it.
 
-For all Pull requests, you must follow the coding style of the existing files (based on [prettier](https://github.com/prettier/prettier)), and include unit tests and documentation. Be prepared for a thorough code review, and be patient for the merge—this is an open-source initiative.
+For all Pull requests, you must follow the coding style of the existing files (based on [prettier](https://github.com/prettier/prettier)) and include unit tests and documentation. Be prepared for a thorough code review, and be patient for the merge—this is an open-source initiative.
 
 **Tip**: Most of the commands used by the react-admin developers are automated in the `makefile`. Feel free to type `make` without argument to see a list of the available commands. 
 
@@ -193,23 +193,23 @@ Clone this repository and run `make install` to grab the dependencies, then `mak
 
 ### Online one-click Setup
 
-You can use Gitpod (an open source, online VS Code-like IDE) for working on issues and making PRs. With a single click it will launch a workspace and automatically clone the repo, run `make install` and `make run` so that you can start straight away.
+You can use Gitpod (an open-source, online VS Code-like IDE) for working on issues and making PRs. With a single click, it will launch a workspace and automatically clone the repo, run `make install` and `make run` so that you can start straight away.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
 
 ### Testing Your Changes In The Example Apps
 
-When developing, most of the time we use the **simple example** to do visual check. It's the same application that we use in Stackblitz to reproduce errors (see https://stackblitz.com/github/marmelab/react-admin/tree/master/examples/simple). The source is located under `examples/simple/`. Call `make run` to launch that example on port 8080 (http://localhost:8080). This command includes a `watch` on the react-admin source, so any of the changes you make to the react-admin packages triggers a live update of the simple example in your browser. 
+When developing, most of the time we use the **simple example** to do a visual check. It's the same application that we use in Stackblitz to reproduce errors (see https://stackblitz.com/github/marmelab/react-admin/tree/master/examples/simple). The source is located under `examples/simple/`. Call `make run` to launch that example on port 8080 (http://localhost:8080). This command includes a `watch` on the react-admin source, so any of the changes you make to the react-admin packages trigger a live update of the simple example in your browser. 
 
-However, the simple example is sometimes too limited. You can use the **demo example** (the source for https://marmelab.com/react-admin-demo/), which is more complete. The source is located under `examples/demo/`. Call `make run-demo` to launch the demo example with a REST dataProvider, or `make run-graphql-demo` to run it with a GraphQL dataProvider. Unfortunately, due to the fact that we use Create React App for this demo, these commands don't watch the changes made in the packages. You'll have to rebuild the react-admin packages after a change (using `make build`, or the more targeted `make build-ra-core`, `make build-ra-ui-materialui`, etc.) to see the effect in the demo app.
+However, the simple example is sometimes too limited. You can use the **demo example** (the source for https://marmelab.com/react-admin-demo/), which is more complete. The source is located under `examples/demo/`. Call `make run-demo` to launch the demo example with a REST dataProvider, or `make run-graphql-demo` to run it with a GraphQL dataProvider. Unfortunately, due to the fact that we use the Create React App for this demo, these commands don't watch the changes made in the packages. You'll have to rebuild the react-admin packages after a change (using `make build`, or the more targeted `make build-ra-core`, `make build-ra-ui-materialui`, etc.) to see the effect in the demo app.
 
-Both of these examples work without server—the API is simulated on the client-side. 
+Both of these examples work without a server—the API is simulated on the client side. 
 
 ### Testing Your Changes In Your App
 
 Using `yarn link`, you can have your project use a local checkout of the react-admin package instead of downloading from npm. This allows you to test react-admin changes in your app.
 
-The following instructions are targeting yarn >= v3 in the client app.
+The following instructions target yarn >= v3 in the client app.
 
 ```sh
 # Go to the folder of your client app
